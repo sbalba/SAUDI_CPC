@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int a[500000];
+int b[500000];
+int n,k;
+int main() {
+    ios::sync_with_stdio(false);
+    cin >> n>> k;
+    for(int i=1;i<=n;i++)cin >> a[i];//(1 2 6 1 1 7 1)عشان أدخل القيم
+    for(int i=1;i<=n;i++)b[i]=b[i-1]+a[i];//عشان يجمع كل رقم مع الي يبي
+    int p=0;
+    for(int i=1;i<=n-k;i++)if(b[i+k]-b[i]<b[p+k]-b[p])p=i;//طويل وشرحه تحت
+    cout << p+1;
+}

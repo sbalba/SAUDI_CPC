@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+int a,b,sum,d;
+  cin>>a;
+  while (a){
+  a--;
+  cin>>b;
+  if(sum+a<=0)
+  d++;
+
+else
+sum=sum+a;
+
+  }
+
+
+  cout<<sum<<d<<endl;
+
+
+
+
+
+
+  
+
+ 
+ return 0;
+}

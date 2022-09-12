@@ -1,0 +1,45 @@
+#include <bits/stdc++.h>
+using namespace std;
+int a[500000];
+
+void solve(){
+    int n;
+    cin>>n;
+    vitor<int> a(n, -1);
+    deque<int> b(n, -1);
+    for(int i=0;i<n;i++){
+    a.puch
+}
+int main() {
+
+
+		
+		string s;
+        int bas=0,nas=0,o=0,p=0;
+
+		cin>>s;
+        for (int i=0;i<s.size();i++){
+            if(s[i]=='('){
+            	
+                o++;
+                
+
+            }
+            else if(s[i]==')' ){
+                if(o){
+                    bas+=2;
+                    --o
+					;
+                    
+                }
+                
+
+}
+       }
+      cout<<bas;
+    
+		
+
+
+
+    }

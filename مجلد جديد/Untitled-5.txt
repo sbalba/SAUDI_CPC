@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define N 100
+void solve(int k) {
+   string s = to_string(k);
+   int v[] = {0, 1, 3, 6, 10};
+   cout<< ((s[0] - '0') - 1) * 10 + v[s.length()] << endl;
+}
+int main() {
+   int k = 9999;
+   solve(k);
+   return 0;
+}
